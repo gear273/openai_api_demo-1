@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenAI API Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+<h1>OpenAI API Demo</h1>
+
+<!-- Chat API -->
+<h2>Chat API</h2>
+<textarea id="chat-input" rows="2" cols="50" placeholder="Enter your message"></textarea>
+<br>
+<button id="chat-btn">Send</button>
+<br>
+<div id="chat-output"></div>
+
+<!-- Edit API -->
+<h2>Edit API</h2>
+<textarea id="edit-content" rows="5" cols="50" placeholder="Enter your document"></textarea>
+<br>
+<button id="edit-btn">Edit</button>
+<br>
+<div id="edit-output"></div>
+
+<!-- Image API -->
+<h2>Image API</h2>
+<textarea id="image-prompt" rows="2" cols="50" placeholder="Enter your prompt"></textarea>
+<br>
+<button id="image-btn">Generate Image</button>
+<br>
+<img id="image-output" alt="Generated Image" hidden>
+
+<!-- Embeddings API -->
+<h2>Embeddings API</h2>
+<textarea id="embeddings-text" rows="2" cols="50" placeholder="Enter your text"></textarea>
+<br>
+<button id="embeddings-btn">Get Embeddings</button>
+<br>
+<div id="embeddings-output"></div>
+
+<!-- Audio API -->
+<h2>Audio API</h2>
+<textarea id="audio-text" rows="2" cols="50" placeholder="Enter your text"></textarea>
+<br>
+<button id="audio-btn">Generate Audio</button>
+<br>
+<audio id="audio-output" controls hidden></audio>
+
+<!-- Files API -->
+<h2>Files API</h2>
+<button id="files-btn">List Files</button>
+<br>
+<div id="files-output"></div>
+
+<!-- Fine-tunes API -->
+<h2>Fine-tunes API</h2>
+<input type="text" id="finetunes-model" placeholder="Enter model name">
+<input type="text" id="finetunes-dataset" placeholder="Enter dataset name">
+<br>
+<button id="finetunes-btn">Fine-tune Model</button>
+<br>
+<div id="finetunes-output"></div>
+
+<!-- Moderations API -->
+<h2>Moderations API</h2>
+<textarea id="moderations-text" rows="2" cols="50" placeholder="Enter your text"></textarea>
+<br>
+<button id="moderations-btn">Moderate Text</button>
+<br>
+<div id="moderations-output"></div>
+
+<!-- Engines API -->
+<h2>Engines API</h2>
+<button id="engines-btn">List Engines</button>
+<br>
+<div id="engines-output"></div>
+</body>
+</html>
